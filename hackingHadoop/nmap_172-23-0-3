@@ -1,0 +1,46 @@
+# Nmap 7.80 scan initiated Thu Mar  3 14:56:53 2022 as: nmap -sC -sV -oN nmap_172-23-0-3 172.23.0.3
+Nmap scan report for 172.23.0.3
+Host is up (0.47s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE    VERSION
+8031/tcp open  hadoop-ipc Hadoop IPC
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-type: text/plain
+|_    looks like you are making an HTTP request to a Hadoop IPC port. This is not the correct port for the web interface on this daemon.
+8042/tcp open  http       Jetty 6.1.26
+|_http-server-header: Jetty(6.1.26)
+| http-title:       
+|_Requested resource was http://172.23.0.3:8042/node
+8080/tcp open  http       Jetty 9.4.14.v20181114
+|_http-server-header: Jetty(9.4.14.v20181114)
+|_http-title: Zeppelin
+8088/tcp open  http       Jetty 6.1.26
+|_http-server-header: Jetty(6.1.26)
+| http-title:     All Applications  
+|_Requested resource was http://172.23.0.3:8088/cluster
+9000/tcp open  hadoop-ipc Hadoop IPC
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-type: text/plain
+|_    looks like you are making an HTTP request to a Hadoop IPC port. This is not the correct port for the web interface on this daemon.
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8031-TCP:V=7.80%I=7%D=3/3%Time=62208A09%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,BB,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-type:\x20text/p
+SF:lain\r\n\r\nIt\x20looks\x20like\x20you\x20are\x20making\x20an\x20HTTP\x
+SF:20request\x20to\x20a\x20Hadoop\x20IPC\x20port\.\x20This\x20is\x20not\x2
+SF:0the\x20correct\x20port\x20for\x20the\x20web\x20interface\x20on\x20this
+SF:\x20daemon\.\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9000-TCP:V=7.80%I=7%D=3/3%Time=62208A09%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,BB,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-type:\x20text/p
+SF:lain\r\n\r\nIt\x20looks\x20like\x20you\x20are\x20making\x20an\x20HTTP\x
+SF:20request\x20to\x20a\x20Hadoop\x20IPC\x20port\.\x20This\x20is\x20not\x2
+SF:0the\x20correct\x20port\x20for\x20the\x20web\x20interface\x20on\x20this
+SF:\x20daemon\.\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  3 14:57:49 2022 -- 1 IP address (1 host up) scanned in 56.86 seconds
