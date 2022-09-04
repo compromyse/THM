@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Sat Aug 20 20:46:53 2022 as: nmap -vvv -p 22,80 -sC -sV -Pn -oN nmap 10.10.177.92
+Nmap scan report for 10.10.177.92
+Host is up, received user-set (0.23s latency).
+Scanned at 2022-08-20 20:46:54 IST for 14s
+
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: DD1493059959BA895A46C026C39C36EF
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: RecruitSec: Industry Leading Infosec Recruitment
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 20 20:47:08 2022 -- 1 IP address (1 host up) scanned in 14.25 seconds
