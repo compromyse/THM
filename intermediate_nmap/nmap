@@ -1,0 +1,63 @@
+# Nmap 7.92 scan initiated Sat Sep 17 21:24:29 2022 as: nmap -vvv -p 22,2222,31337 -sC -sV -oN nmap 10.10.250.90
+Nmap scan report for 10.10.250.90
+Host is up, received conn-refused (0.18s latency).
+Scanned at 2022-09-17 21:24:29 EDT for 18s
+
+PORT      STATE SERVICE REASON  VERSION
+22/tcp    open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 7d:dc:eb:90:e4:af:33:d9:9f:0b:21:9a:fc:d5:77:f2 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLgmREvZByFxoWZEVRzGogcBi04sMOoMHUcJ8P2t9mi8q1V+lRvZczumOJ9RliQ1khNRHsIgnJ7/Yp4iCz9UFRLYsIlQ2PAgODBjNyhIWepELlSatGLZqviC6qnxEASC2OrwFvHmYNklZIjbc4+Yli2bn8I2PjntRKoMQHjehoWip/V955dYwa7KysnPPMsmXlrx9dhHJ0yheqYIOxwlN2xRC7ZtQMfY28mn0ifRhMnM9RRgC5CDAJh3QeJYM90gBdIq466x4p6yWQzjK/t0i5zIKFBJBLp85DaT3WkWBn3ueHFoedeeAsXeO16BNX6SomLNWsslp5a3E1YQiOBX3LNEm64Rr8ekPxtrXhTzcBUMGJYzc7QaE2/N9yCnkvL0vCApO+XFmo+lr9bAt8qGixpqk1awPqIhxOTUWIr4lAShsu7b+mwQlGeYO7aEeaO3R7ZFaZwGfp2vF/yYwReT+mVimFbs67yiVcMCNhVgvI5vLFrh+OyvufUK2tnCe4xbs=
+|   256 83:a7:4a:61:ef:93:a3:57:1a:57:38:5c:48:2a:eb:16 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEuffg4vybQqbP0RmSCYjd6nillwqgiGF1OAIPUsBCewLy6eiVYsnzAF3Z2TAHKjA8GqTlhRu05KWfdys7J+MQc=
+|   256 30:bf:ef:94:08:86:07:00:f7:fc:df:e8:ed:fe:07:af (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILHnXOBOqSHpnx9JPguwJAsiurhjCuLjkOIfNSp9f9ai
+2222/tcp  open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ff:69:6e:5c:1d:81:21:6f:b3:43:6d:b0:23:b6:50:15 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDGC/24Z5yHKn4dNpBTOgM95i53qen2wfmrm8jbSF9ovZX/ofvh4WSBfgP+9TiC4TD+0/dggDA2a04GDut2I77UQWk1D7mdVYhdhNsFTP11EGFs1MgsYlymm7DkMeKtzu2qIHjaRGpYqRoiF6zl2q9Sw7geCYcGZijynOztZ1evQcn/JZwOF+9LVVKGkLBtaa75sD6GYfH7DKgQFQ8/STyZXqOMX1XHDELpsLjDJ7EXO0UeJlSOUacOoZQkEnmqtD214+AA6uvVXVh0D2oVg1/yIxR3xQpgXdRMWskMV9ASDSVIaJ0F5L0G7vldLoWU/xcWGi43rvuq1rnQhQ3ogH0j6mXdtetGxIj4oS30k6KowutNK+Gqw+sBUeiUTI2eHI4LQ9oKvMZmjPrpLTO/beXNXQT9Kn0sJXQDlEUCruJFv6ZPf4wYhw9nBVrStOFkGDdaWkKgqoh866T5MEwuc63/aUanOibIsPV/5VPpV1atia2FQ0zpfNY4kVWT2Gnjdk=
+|   256 67:23:ef:0d:15:e1:9a:8a:0c:5d:b5:89:ed:aa:b2:35 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBi46/1YwM38WLIIOiO5klCdYz02wH56XN/qaRKclC9o60zlFD4hM94JaZjlw+SOizklNjxCBt2AKPCdBduCBj8=
+|   256 05:fd:14:8c:27:44:63:20:de:95:47:a9:74:a0:43:52 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHjMnmCQvkiK4f8B3Mfrdr80FCVU7jJdDI2U2+jSV1Xd
+31337/tcp open  Elite?  syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NULL, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
+|     In case I forget - user:pass
+|_    ubuntu:Dafdas!!/str0ng
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port31337-TCP:V=7.92%I=7%D=9/17%Time=6326734E%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/st
+SF:r0ng\n\n")%r(GetRequest,35,"In\x20case\x20I\x20forget\x20-\x20user:pass
+SF:\nubuntu:Dafdas!!/str0ng\n\n")%r(SIPOptions,35,"In\x20case\x20I\x20forg
+SF:et\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(GenericLines,35,"I
+SF:n\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n"
+SF:)%r(HTTPOptions,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu
+SF::Dafdas!!/str0ng\n\n")%r(RTSPRequest,35,"In\x20case\x20I\x20forget\x20-
+SF:\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(RPCCheck,35,"In\x20case\x
+SF:20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(DNSVers
+SF:ionBindReqTCP,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:D
+SF:afdas!!/str0ng\n\n")%r(DNSStatusRequestTCP,35,"In\x20case\x20I\x20forge
+SF:t\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(Help,35,"In\x20case
+SF:\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(SSLSe
+SF:ssionReq,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas
+SF:!!/str0ng\n\n")%r(TerminalServerCookie,35,"In\x20case\x20I\x20forget\x2
+SF:0-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(TLSSessionReq,35,"In\x2
+SF:0case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(
+SF:Kerberos,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas
+SF:!!/str0ng\n\n")%r(SMBProgNeg,35,"In\x20case\x20I\x20forget\x20-\x20user
+SF::pass\nubuntu:Dafdas!!/str0ng\n\n")%r(X11Probe,35,"In\x20case\x20I\x20f
+SF:orget\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(FourOhFourReque
+SF:st,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/str
+SF:0ng\n\n")%r(LPDString,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\n
+SF:ubuntu:Dafdas!!/str0ng\n\n")%r(LDAPSearchReq,35,"In\x20case\x20I\x20for
+SF:get\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n")%r(LDAPBindReq,35,"I
+SF:n\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n"
+SF:)%r(LANDesk-RC,35,"In\x20case\x20I\x20forget\x20-\x20user:pass\nubuntu:
+SF:Dafdas!!/str0ng\n\n")%r(TerminalServer,35,"In\x20case\x20I\x20forget\x2
+SF:0-\x20user:pass\nubuntu:Dafdas!!/str0ng\n\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 17 21:24:47 2022 -- 1 IP address (1 host up) scanned in 18.26 seconds
