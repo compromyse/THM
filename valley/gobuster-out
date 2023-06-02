@@ -1,0 +1,4 @@
+/gallery             [36m (Status: 301)[0m [Size: 316][34m [--> http://10.10.100.125/gallery/][0m
+/static              [36m (Status: 301)[0m [Size: 315][34m [--> http://10.10.100.125/static/][0m
+/pricing             [36m (Status: 301)[0m [Size: 316][34m [--> http://10.10.100.125/pricing/][0m
+/server-status       [33m (Status: 403)[0m [Size: 278]
